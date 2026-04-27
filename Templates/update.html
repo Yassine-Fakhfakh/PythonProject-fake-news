@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Update</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Update Article</h1>
+
+    <div class="form">
+        <form action="/update/{{article.id}}" method="POST">
+            <input type="text" name="title" id="title" value="{{article.title}}">
+            <input type="text" name="content" value="{{article.content}}">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+    <button>
+        <a href="/">cancel</a>
+    </button>
+</div>
+{% endblock %}

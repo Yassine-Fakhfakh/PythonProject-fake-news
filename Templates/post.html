@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Post</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">New Article</h1>
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center">Create a new article below!</h4>
+    <div class="form">
+        <form action="/post/" method="POST">
+            <input type="text" name="title" id="title">
+            <input type="text" name="content" >
+            <input type="submit" value="New">
+        </form>
+    </div>
+    <button>
+        <a href="/">cancel</a>
+    </button>
+</div>
+{% endif %}
+{% endblock %}
+

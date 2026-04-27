@@ -1,0 +1,131 @@
+/* Style du corps de la page */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0a0a1a; /* Fond très sombre */
+    color: #a33ff0; /* Couleur de texte violet néon */
+    margin: 10px;
+    padding: 0px;
+    text-shadow: 0 0 5px #a33ff0; /* Effet de lueur sur le texte */
+}
+
+/* Conteneur principal */
+.content {
+    max-width: 1820px;
+    margin: auto;
+    background: #15152b; /* Fond du conteneur légèrement moins sombre */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #a33ff0, 0 0 30px #a33ff0, 0 0 40px #a33ff0; /* Ombre multiple pour un effet de lueur néon */
+    border: 1px solid #a33ff0; /* Bordure lumineuse */
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: #a33ff0;
+    text-shadow: 0 0 10px #a33ff0;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #a33ff0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #a33ff0;
+}
+
+th {
+    background-color: #252542; /* Fond des en-têtes plus sombre */
+    text-align: center;
+    color: #a33ff0;
+}
+
+td {
+    text-align: left;
+}
+
+/* Liens */
+a {
+    color: #ff3d85; /* Couleur des liens en magenta néon */
+    text-decoration: none;
+    margin-right: 10px;
+    text-shadow: 0 0 5px #ff3d85;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px #ff3d85, 0 0 20px #ff3d85; /* Augmente la lueur au survol */
+}
+
+/* Bouton */
+button {
+    background-color: transparent;
+    color: #a33ff0;
+    border: 1px solid #a33ff0;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #a33ff0;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #a33ff0;
+    color: #0a0a1a;
+    box-shadow: 0 0 20px #a33ff0, 0 0 30px #a33ff0;
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Formulaire */
+.form input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #a33ff0;
+    border-radius: 4px;
+    background-color: #15152b;
+    color: #a33ff0;
+    text-align: center;
+    box-shadow: 0 0 10px #a33ff0;
+}
+
+/* Bouton d'envoi de l'article */
+.form input[type="submit"] {
+    width: 100%;
+    background-color: transparent;
+    color: #a33ff0;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #a33ff0;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #a33ff0;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out; /* Ajoute une transition à toutes les propriétés */
+    box-shadow: 0 0 10px #a33ff0; /* Lueur de base */
+}
+
+.form input[type="submit"]:hover {
+    background-color: #a33ff0;
+    color: #0a0a1a;
+    box-shadow: 0 0 10px #a33ff0,
+                0 0 20px #a33ff0,
+                0 0 30px #a33ff0,
+                0 0 40px #a33ff0,
+                0 0 70px #a33ff0;
+}

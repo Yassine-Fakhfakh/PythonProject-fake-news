@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>View</title>
+{% endblock %}
+
+{% block body %}
+
+{% if file_url %}
+
+    <div class="mt-5">
+        <img src="{{ file_url }}" style="">
+    </div>
+
+{% endif %}
+
+<div class="content">
+    <h1 style="text-align: center">{{article.title}}</h1>
+    <p>{{article.content}}</p>
+    <a href="/">Menu</a>
+</div>
+{% endblock %}
