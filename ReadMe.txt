@@ -36,7 +36,11 @@ I tried to make it easy for everyone to get started:
 
 Clone the repository:
 
+<<<<<<< HEAD
 git clone https://github.com/Yassine-Fakhfakh/PythonProject-fake-news
+=======
+git clone [https://github.com/Yassine-Fakhfakh/PythonProject-fake-news.git](https://github.com/Yassine-Fakhfakh/PythonProject-fake-news.git)
+>>>>>>> 8102e19821dcdc9c13a2c115c46a7bf0628a6bd3
 
 
 Create and activate your virtual environment:
