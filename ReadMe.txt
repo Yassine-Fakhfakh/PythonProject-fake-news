@@ -54,11 +54,11 @@ Configuration:
 Create a .env file at the root with:
 
 SECRET_KEY=your_secret_key
-DATABASE_URL=sqlite:///article.db
+DATABASE_URL=your_data_base
 
 
 Run the application:
 
 python app.py
 
-
+Ps: The current css is a place holder.
