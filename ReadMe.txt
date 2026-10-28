@@ -44,6 +44,12 @@ python -m venv .venv
 # On Windows:
 .venv\Scripts\activate
 
+Create the .env file with :
+
+SECRET_KEY=your_secrete_key
+DATABASE_URL=sqlite:///news.db 
+
+Fun fact: when trying to clone this repo myself after a while, I completely forgot to create the .env file.
 
 Install dependencies:
 

@@ -1,0 +1,8 @@
+Update of the Wednesday 28th octobre 2026 at 00h55
+
+fixed bugs:
+    Issue: the uers was able to submit empty text fields when creating or updating articles.
+    Fix: when inputting the texte if the frontend detects that the texts are empty you will not be able to publish the articles 
+
+Project changes & improvements:
+    `README.md` was updated with setup instructions, environment variable guidance (`.env`), and project history.
