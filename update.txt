@@ -1,8 +1,20 @@
-Update of the Wednesday 28th octobre 2026 at 00h55
+Update of July 2025: Addition of a new visual style.
 
-fixed bugs:
-    Issue: the uers was able to submit empty text fields when creating or updating articles.
-    Fix: when inputting the texte if the frontend detects that the texts are empty you will not be able to publish the articles 
+Updates of 27/04/2026:
 
-Project changes & improvements:
+Security: Implementation of environment variables (.env) to protect the SECRET_KEY and database URI.
+
+Refactoring: Code optimization for better performance.
+
+Update of Wednesday 28th octobre 2026 at 00h55
+    Fixed bugs:
+    Issue: the users were able to submit empty text fields when creating or updating articles.
+    Fix: when inputting the text, if the frontend detects that the texts are empty, you will not be able to publish the articles.
+    Project changes & improvements:
     `README.md` was updated with setup instructions, environment variable guidance (`.env`), and project history.
+
+Update of Thursday 29th octobre 2026 at 22h30:
+    Upgrading the CSS and the HTML.
+    Changing the architecture of the project.
+    Update Note:
+        I haven't rebuild this project from scratch because it suppose to be finished but i need it to upgrade it.

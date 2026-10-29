@@ -1,33 +1,22 @@
 from flask import Flask, render_template, request, redirect
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime, UTC
 from werkzeug.utils import redirect
 from os import getenv as v_variable
 from dotenv import load_dotenv as load_env
+from models import *
 
 load_env()
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = v_variable('DATABASE_URL')
-app.config['SECRET_KEY'] = v_variable('SECRET_KEY')
-db = SQLAlchemy(app)
-
-
-class Article(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), nullable=False)
-    content = db.Column(db.String(20000), nullable=False)
-    date_created = db.Column(db.DateTime, default= datetime.now(UTC))
-
-    def __repr__(self):
-        return '<article %r>' % self.id
+app.config['SQLALCHEMY_DATABASE_URI'] = v_variable('DATABASE_URL', 'sqlite:///temp.db')
+app.config['SECRET_KEY'] = v_variable('SECRET_KEY', 'default_secret_key')
+db.init_app(app)
 
 
 @app.route('/post/', methods=['POST', 'GET'])
 def new():
     if request.method == 'POST':
-        article_title = request.form['title']
-        article_content = request.form['content']
+        article_title = request.form['title'].strip()
+        article_content = request.form['content'].strip()
         new_article = Article(title=article_title,content=article_content)
         try:
             db.session.add(new_article)
@@ -81,7 +70,6 @@ def update(id):
 def view(id):
     article = Article.query.get_or_404(id)
     return render_template('view.html', article=article)
-
 
 
 if __name__ == '__main__':

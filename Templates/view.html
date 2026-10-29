@@ -5,18 +5,17 @@
 {% endblock %}
 
 {% block body %}
-
 {% if file_url %}
-
-    <div class="mt-5">
-        <img src="{{ file_url }}" style="">
+    <div class="image-container">
+        <img src="{{ file_url }}" alt="Attached file">
     </div>
-
 {% endif %}
 
 <div class="content">
-    <h1 style="text-align: center">{{article.title}}</h1>
-    <p>{{article.content}}</p>
-    <a href="/">Menu</a>
+    <h1 class="page-title">{{article.title}}</h1>
+    <p class="article-text">{{article.content}}</p>
+    <div class="btn-container">
+        <a href="/" class="btn-action">Menu</a>
+    </div>
 </div>
 {% endblock %}

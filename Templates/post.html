@@ -6,18 +6,17 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">New Article</h1>
-    <h4 style="text-align: center">Create a new article below!</h4>
-    <div class="form">
-        <form action="/post/" method="POST">
-            <input type="text" name="title" id="title" placeholder="Titre de l'article" required>
-            <input type="text" name="content" placeholder="Contenu de l'article" required>
-            <input type="submit" value="New">
+    <h1 class="page-title">New Article</h1>
+    <h4 class="form-subtitle">Create a new article below!</h4>
+    <div class="form-container">
+        <form action="/post/" method="POST" class="form">
+            <input type="text" name="title" id="title" placeholder="Article's title" required>
+            <input type="text" name="content" placeholder="Article's content" required>
+            <input type="submit" value="Publish">
         </form>
     </div>
-    <button>
-        <a href="/">cancel</a>
-    </button>
+    <div class="btn-container">
+        <a href="/" class="btn-action">Cancel</a>
+    </div>
 </div>
 {% endblock %}
-

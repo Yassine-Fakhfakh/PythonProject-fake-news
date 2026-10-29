@@ -6,6 +6,25 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    <header>
+        <div>
+            <h1>Article App</h1>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button"> Day </button>
+        </div>
+        </header>
     {% block body %}{% endblock %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            const body = document.body;
+            if (themeBtn) {
+                themeBtn.addEventListener('click', () => {
+                    body.classList.toggle('night-mode');
+                    const isNight = body.classList.contains('night-mode');
+                    themeBtn.textContent = isNight ? 'Night' : 'Day';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
