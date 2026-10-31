@@ -1,8 +1,8 @@
 :root {
     --sky-bg: #e7f2f9;
     --card-bg: #ffffff;
-    --text-main: #ffd500;
-    --text-muted: #475569;
+    --text-main: #ffc500;
+    --text-muted: #000000;
     --border-color: #bae6fd;
     --primary-btn: #0284c7;
     --primary-hover: #0369a1;
@@ -10,10 +10,10 @@
 }
 
 body.night-mode {
-    --sky-bg: #090d16;
+    --sky-bg: #000000;
     --card-bg: #111827;
     --text-main: #f8e964;
-    --text-muted: #94a3b8;
+    --text-muted: #e7f2f9;
     --border-color: #1e293b;
     --primary-btn: #38bdf8;
     --primary-hover: #0284c7;
@@ -26,7 +26,7 @@ body.night-mode {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Courier New", Roboto, sans-serif;
     background-color: var(--sky-bg);
     color: var(--text-main);
     margin: 0;

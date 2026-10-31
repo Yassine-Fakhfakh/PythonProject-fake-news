@@ -3,6 +3,7 @@ from werkzeug.utils import redirect
 from os import getenv as v_variable
 from dotenv import load_dotenv as load_env
 from models import *
+import sys
 
 load_env()
 
@@ -76,3 +77,4 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+    sys.exit()
